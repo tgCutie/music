@@ -31,12 +31,10 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="Hᴇʟᴘ Sᴇᴛᴛɪɴɢs", callback_data="shikhar"
                 ),
-            ],
-            [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🔧Sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
             ],
         ]
@@ -45,18 +43,13 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="Hᴇʟᴘ Sᴇᴛᴛɪɴɢs", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="⚡Sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
-                ),
             ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
@@ -113,29 +106,20 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    "🛠️ Cᴏɴᴛᴀᴄᴛ ᴍʏ ᴏᴡɴᴇʀ ᴛᴏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘs",
+                    url=f"tg://user?id=1918841611",
                 )
             ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if not SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons = [
+          
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    "➕ Add me to your Group",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    "🛠️ Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴛᴀᴋᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘs.",
+                    url=f"tg://user?id=1918841611",
                 )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
-                ),
             ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
@@ -143,35 +127,13 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    "➕ Add me to your Group",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="⚡Hᴇʟᴘ ᴍᴇɴᴜ", callback_data="shikhar"
                 ),
             ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    "➕ Add me to your Group",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                )
-            ],
             [
                 InlineKeyboardButton(
                     text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
